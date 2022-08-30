@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   height: 4rem;
+  background-color: #38015c;
   background-image: url(../../assets/logo-blanco-2.png);
   background-position: initial;
   background-repeat: no-repeat;
