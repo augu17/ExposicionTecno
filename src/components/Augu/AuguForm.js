@@ -15,7 +15,7 @@ const AuguForm = () => {
       <h1>Sección Augu</h1>
       <section className={classes.augu}>
         <h2>TSSA - Jarvis</h2>
-        <Carousel cols={1} rows={1} gap={5} loop scrollSnap>
+        <Carousel cols={1} rows={1} gap={25} loop scrollSnap>
           <Carousel.Item>
             <img className={classes.img2} src={imgJarvis0} />
           </Carousel.Item>
