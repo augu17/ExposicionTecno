@@ -3,7 +3,7 @@ import { Link, useHistory } from "react-router-dom";
 
 import AuthContext from "../../store/auth-context";
 import classes from "./MainNavigation.module.css";
-import logoTecno from "../../assets/logo-tecno.png";
+import logoTecno from "../../assets/logo-blanco-2.png";
 
 const MainNavigation = () => {
   const history = useHistory();
@@ -90,14 +90,19 @@ const MainNavigation = () => {
     <header className={classes.header}>
       <nav>
         <ul>
-          {/* {!isLoggedIn && (
-            <li>
-              <img className={classes.img} src={logoTecno}></img>
-            </li>
-          )} */}
-          <li>
-            <Link to="/">Inicio</Link>
-          </li>
+          {!isLoggedIn && (
+            <div>
+              {/* <li>
+                <img className={classes.img} src={logoTecno}></img>
+              </li> */}
+              <li>
+                <Link to="/">
+                  <img className={classes.img} src={logoTecno}></img>
+                </Link>
+              </li>
+            </div>
+          )}
+
           {isLoggedIn &&
             (email === "augu@test.com" || email === "test@test.com") && (
               <li>
