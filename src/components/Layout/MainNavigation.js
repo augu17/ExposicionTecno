@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 
 import AuthContext from "../../store/auth-context";
@@ -13,7 +13,7 @@ const MainNavigation = () => {
   const [btnIsHighlightedEma, setBtnIsHighlightedEma] = useState(false);
   const [btnIsHighlightedMarga, setBtnIsHighlightedMarga] = useState(false);
   const [btnIsHighlightedNancy, setBtnIsHighlightedNancy] = useState(false);
-
+  const [scrolling, setScrolling] = useState(false);
   const isLoggedIn = authCtx.isLoggedIn;
   const email = localStorage.getItem("email");
 
@@ -49,6 +49,13 @@ const MainNavigation = () => {
       clearTimeout(timer);
     };
   };
+  useEffect(() => {
+    const scrollHandler = () => {
+      if (scrolling === false) setScrolling(true);
+    };
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, [scrolling]);
 
   const clickHandlerEma = (event) => {
     setBtnIsHighlightedEma(true);
@@ -92,12 +99,27 @@ const MainNavigation = () => {
         <ul>
           {!isLoggedIn && (
             <div>
-              {/* <li>
-                <img className={classes.img} src={logoTecno}></img>
-              </li> */}
               <li>
                 <Link to="/">
-                  <img className={classes.img} src={logoTecno}></img>
+                  {window.innerWidth > 768 ? (
+                    <img
+                      className={classes.imgWeb}
+                      src={logoTecno}
+                      alt="1"
+                    ></img>
+                  ) : window.innerWidth < 600 ? (
+                    <img
+                      className={classes.imgCelVertical}
+                      src={logoTecno}
+                      alt="2"
+                    ></img>
+                  ) : (
+                    <img
+                      className={classes.imgCelHorizontal}
+                      src={logoTecno}
+                      alt="3"
+                    ></img>
+                  )}
                 </Link>
               </li>
             </div>

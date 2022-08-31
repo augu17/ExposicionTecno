@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import Carousel from "better-react-carousel";
 
 import classes from "./AuguForm.module.css";
@@ -17,16 +17,16 @@ const AuguForm = () => {
         <h2>TSSA - Jarvis</h2>
         <Carousel cols={1} rows={1} gap={25} loop scrollSnap>
           <Carousel.Item>
-            <img className={classes.img2} src={imgJarvis0} />
+            <img className={classes.img2} src={imgJarvis0} alt="0" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className={classes.img} src={imgJarvis1} />
+            <img className={classes.img} src={imgJarvis1} alt="1" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className={classes.img} src={imgJarvis2} />
+            <img className={classes.img} src={imgJarvis2} alt="2" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className={classes.img2} src={imgJarvis3} />
+            <img className={classes.img2} src={imgJarvis3} alt="3" />
           </Carousel.Item>
         </Carousel>
       </section>

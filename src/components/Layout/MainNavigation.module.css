@@ -173,7 +173,16 @@
   }
 }
 
-.img {
+.imgWeb {
+  width: 34%;
+  height: 34%;
+}
+
+.imgCelVertical {
   width: 80%;
   height: 80%;
+}
+.imgCelHorizontal {
+  width: 55%;
+  height: 55%;
 }
