@@ -3,7 +3,11 @@
   width: 95%;
   max-width: 25rem;
   border-radius: 6px;
-  background-color: #38015c;
+  background-color: #01775e;
+  background-image: url("../../assets/Tecno-Nav.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   text-align: center;
@@ -48,7 +52,7 @@
   cursor: pointer;
   font: inherit;
   color: white;
-  background-color: #9f5ccc;
+  background-color: #38015c;
   border: 1px solid #9f5ccc;
   border-radius: 4px;
   padding: 0.5rem 2.5rem;
@@ -62,7 +66,7 @@
 .actions .toggle {
   margin-top: 1rem;
   background-color: transparent;
-  color: #9f5ccc;
+  color: #38015c;
   border: none;
   padding: 0.15rem 1.5rem;
 }
