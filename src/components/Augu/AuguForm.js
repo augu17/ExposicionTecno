@@ -8,6 +8,7 @@ import imgJarvis0 from "../../assets/Jarvis-Role-0.png";
 import imgJarvis1 from "../../assets/Jarvis-Role-1.png";
 import imgJarvis2 from "../../assets/Jarvis-Role-2.png";
 import imgJarvis3 from "../../assets/Jarvis-Role-3.png";
+import imgJarvisInicio from "../../assets/Flujo-Jarvis-Expo.png";
 
 const AuguForm = () => {
   return (
@@ -17,7 +18,14 @@ const AuguForm = () => {
         <h2>TSSA - Jarvis</h2>
         <Carousel cols={1} rows={1} gap={25} loop scrollSnap>
           <Carousel.Item>
-            <img className={classes.img2} src={imgJarvis0} alt="0" />
+            <img
+              className={classes.img2}
+              src={imgJarvisInicio}
+              alt="Flujo Jarvis"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className={classes.img2} src={imgJarvis0} alt="" />
           </Carousel.Item>
           <Carousel.Item>
             <img className={classes.img} src={imgJarvis1} alt="1" />
