@@ -114,11 +114,51 @@
   border-radius: 25px;
   font-weight: bold;
 }
-.btnChico {
+
+.btnChicoAugu {
   cursor: pointer;
   font: inherit;
   border: none;
-  background-color: #3b73bd;
+  background-color: #076366;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.btnChicoEma {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #0b209c;
+  color: white;
+  padding: 0.5rem 0.9rem;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.btnChicoMarga {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #661d88;
+  color: white;
+  padding: 0.5rem 0.7rem;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.btnChicoNancy {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #943bbd;
   color: white;
   padding: 0.5rem 0.8rem;
   display: flex;

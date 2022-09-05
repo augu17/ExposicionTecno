@@ -138,7 +138,7 @@ const MainNavigation = () => {
                   </Link>
                 ) : (
                   <Link
-                    className={classes.btnChico}
+                    className={classes.btnChicoAugu}
                     onClick={clickHandlerAugu}
                     to="/Augu"
                   >
@@ -160,7 +160,7 @@ const MainNavigation = () => {
                   </Link>
                 ) : (
                   <Link
-                    className={classes.btnChico}
+                    className={classes.btnChicoEma}
                     onClick={clickHandlerEma}
                     to="/Ema"
                   >
@@ -182,7 +182,7 @@ const MainNavigation = () => {
                   </Link>
                 ) : (
                   <Link
-                    className={classes.btnChico}
+                    className={classes.btnChicoMarga}
                     onClick={clickHandlerMarga}
                     to="/Marga"
                   >
@@ -204,7 +204,7 @@ const MainNavigation = () => {
                   </Link>
                 ) : (
                   <Link
-                    className={classes.btnChico}
+                    className={classes.btnChicoNancy}
                     onClick={clickHandlerNancy}
                     to="/Nancy"
                   >
