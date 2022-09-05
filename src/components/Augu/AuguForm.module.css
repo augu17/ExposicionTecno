@@ -29,6 +29,8 @@
 
 .augu h2 {
   font-size: 2rem;
+  font-stretch: extra-condensed;
+  font-family: fantasy;
   margin-top: 0;
 }
 

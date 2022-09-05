@@ -10,6 +10,10 @@ import imgJarvis2 from "../../assets/Jarvis-Role-2.png";
 import imgJarvis3 from "../../assets/Jarvis-Role-3.png";
 import imgJarvisInicio from "../../assets/Flujo-Jarvis-Expo.png";
 
+import video from "../../assets/se-va-epicamente.mp4";
+
+import ReactPlayer from "react-player";
+
 const AuguForm = () => {
   return (
     <section className={classes.starting}>
@@ -43,6 +47,16 @@ const AuguForm = () => {
             ) : (
               <img className={classes.img2bis} src={imgJarvis3} alt="3" />
             )}
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className={classes.img}>
+              <ReactPlayer
+                url={"https://youtu.be/pSZrhP6Y38M"}
+                width="100%"
+                height="100%"
+                controls
+              />
+            </div>
           </Carousel.Item>
         </Carousel>
       </section>
