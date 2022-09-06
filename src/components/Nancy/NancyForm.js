@@ -20,7 +20,7 @@ const NancyForm = () => {
             <div>
               <ul className={classes.ul}>
                 <li>
-                  {window.innerWidth < 780 ? (
+                  {window.innerWidth < 768 ? (
                     <img
                       className={classes.imgTecno}
                       src={imgTecno}
@@ -35,7 +35,7 @@ const NancyForm = () => {
                   )}
                 </li>
                 <li>
-                  {window.innerWidth < 780 ? (
+                  {window.innerWidth < 768 ? (
                     <img className={classes.img3} src={imgNec} alt="NEC" />
                   ) : (
                     <img
