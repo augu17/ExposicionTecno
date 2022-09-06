@@ -18,7 +18,7 @@
   background-color: #17222b;
   color: white;
   border-radius: 14px;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -33,7 +33,7 @@
   height: 25%;
   /* border: 2px solid #8aa0bd;
   border-radius: 150px; */
-  margin: 1rem;
+  margin: 0.5rem;
   /* margin-left: 2rem; */
   /* margin-right: 2rem; */
 }
@@ -41,7 +41,7 @@
 .imgTecno {
   width: 120%;
   height: 120%;
-  margin-top: 60px;
+  margin-top: 50px;
   /* border: 2px solid #8aa0bd;
   border-radius: 150px; */
 }
@@ -55,22 +55,29 @@
   border-radius: 150px; */
 }
 .img3 {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
   margin-left: 50px;
 }
 .img3v2 {
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
   margin-left: 2rem;
 }
 
 .ul {
   list-style: none;
-  margin-right: 4rem;
+  margin-right: 3.5rem;
+}
+.ul2 {
+  list-style: none;
+  margin-right: 4.5rem;
 }
 .li {
   margin-left: 2rem;
+}
+.li2 {
+  margin-left: 1.5rem;
 }
 .ul2 {
   list-style: none;

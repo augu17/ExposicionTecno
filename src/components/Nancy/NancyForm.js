@@ -49,19 +49,35 @@ const NancyForm = () => {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-            <ul className={classes.ul}>
-              <li className={classes.li}>
-                <h2>Equipo</h2>
-              </li>
-              <li className="nav-item">
-                <img className={classes.img} src={imgDeveloper} alt="dev" />
-                <img className={classes.img} src={imgProduct} alt="prod" />
-              </li>
-              <li className="nav-item">
-                <img className={classes.img} src={imgQA} alt="qa" />
-                <img className={classes.img} src={imgDevops} alt="devops" />
-              </li>
-            </ul>
+            {window.innerWidth < 768 ? (
+              <ul className={classes.ul}>
+                <li className={classes.li2}>
+                  <h2>Equipo</h2>
+                </li>
+                <li className="nav-item">
+                  <img className={classes.img} src={imgDeveloper} alt="dev" />
+                  <img className={classes.img} src={imgProduct} alt="prod" />
+                </li>
+                <li className="nav-item">
+                  <img className={classes.img} src={imgQA} alt="qa" />
+                  <img className={classes.img} src={imgDevops} alt="devops" />
+                </li>
+              </ul>
+            ) : (
+              <ul className={classes.ul2}>
+                <li className={classes.li2}>
+                  <h2>Equipo</h2>
+                </li>
+                <li className="nav-item">
+                  <img className={classes.img} src={imgDeveloper} alt="dev" />
+                  <img className={classes.img} src={imgProduct} alt="prod" />
+                </li>
+                <li className="nav-item">
+                  <img className={classes.img} src={imgQA} alt="qa" />
+                  <img className={classes.img} src={imgDevops} alt="devops" />
+                </li>
+              </ul>
+            )}
           </Carousel.Item>
           <Carousel.Item>
             <ul className={classes.ul2}>
