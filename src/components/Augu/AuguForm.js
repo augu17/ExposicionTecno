@@ -44,16 +44,6 @@ const AuguForm = () => {
               <img className={classes.img2bis} src={imgJarvis3} alt="3" />
             )}
           </Carousel.Item>
-          <Carousel.Item>
-            <div className={classes.img}>
-              <ReactPlayer
-                url={"https://www.youtube.com/watch?v=pSZrhP6Y38M"}
-                width="100%"
-                height="100%"
-                controls
-              />
-            </div>
-          </Carousel.Item>
         </Carousel>
       </section>
     </section>

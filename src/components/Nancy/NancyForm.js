@@ -7,6 +7,9 @@ import imgDevops from "../../assets/devops-icon.png";
 import imgTecno from "../../assets/logo-blanco.png";
 import imgNec from "../../assets/NEC_logo.png";
 import imgCity from "../../assets/citySensAI-logo.png";
+import gif from "../../assets/loader.gif";
+import gif2 from "../../assets/loader-2.gif";
+import ReactPlayer from "react-player";
 
 const NancyForm = () => {
   return (
@@ -98,6 +101,48 @@ const NancyForm = () => {
               <p>BD: SQL</p>
               <p>ORM: Entity Framework</p>
             </ul>
+          </Carousel.Item>
+          <Carousel.Item>
+            {window.innerWidth < 768 ? (
+              <div className={classes.yt2}>
+                <ReactPlayer
+                  url={"https://www.youtube.com/watch?v=pSZrhP6Y38M"}
+                  width="100%"
+                  height="100%"
+                  controls
+                />
+              </div>
+            ) : window.innerWidth > 1200 ? (
+              <div className={classes.yt3}>
+                <ReactPlayer
+                  url={"https://www.youtube.com/watch?v=pSZrhP6Y38M"}
+                  width="100%"
+                  height="100%"
+                  controls
+                />
+              </div>
+            ) : (
+              <div className={classes.yt}>
+                <ReactPlayer
+                  url={"https://www.youtube.com/watch?v=pSZrhP6Y38M"}
+                  width="100%"
+                  height="100%"
+                  controls
+                />
+              </div>
+            )}
+          </Carousel.Item>
+          <Carousel.Item>
+            <div>
+              <ul className={classes.ul}>
+                <li className="nav-item">
+                  <img className={classes.img} src={gif} alt="gif1" />
+                </li>
+                <li className="nav-item">
+                  <img className={classes.img} src={gif2} alt="gif2" />
+                </li>
+              </ul>
+            </div>
           </Carousel.Item>
         </Carousel>
       </section>
