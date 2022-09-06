@@ -11,7 +11,6 @@ const AuthForm = () => {
 
   const [isLogin, setIsLogin] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
-
   const switchAuthModeHandler = () => {
     setIsLogin((prevState) => !prevState);
   };
@@ -60,9 +59,16 @@ const AuthForm = () => {
         }
       })
       .then((data) => {
-        const expirationTime = new Date(
-          new Date().getTime() + +data.expiresIn * 62.5
-        );
+        let expirationTime;
+        {
+          data.email === "test@test.com"
+            ? (expirationTime = new Date(
+                new Date().getTime() + +data.expiresIn * 250
+              ))
+            : (expirationTime = new Date(
+                new Date().getTime() + +data.expiresIn * 62.5
+              ));
+        }
         authCtx.login(data.idToken, expirationTime.toISOString());
         console.log(data.email);
         localStorage.setItem("email", data.email);

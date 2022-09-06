@@ -1,16 +1,12 @@
-// import React, { useState, useEffect } from "react";
 import Carousel from "better-react-carousel";
 
 import classes from "./AuguForm.module.css";
-// import Card from "../UI/Card";
-// import img from "../../assets/images.png";
+
 import imgJarvis0 from "../../assets/Jarvis-Role-0.png";
 import imgJarvis1 from "../../assets/Jarvis-Role-1.png";
 import imgJarvis2 from "../../assets/Jarvis-Role-2.png";
 import imgJarvis3 from "../../assets/Jarvis-Role-3.png";
 import imgJarvisInicio from "../../assets/Flujo-Jarvis-Expo.png";
-
-import video from "../../assets/se-va-epicamente.mp4";
 
 import ReactPlayer from "react-player";
 
@@ -51,7 +47,7 @@ const AuguForm = () => {
           <Carousel.Item>
             <div className={classes.img}>
               <ReactPlayer
-                url={"https://youtu.be/pSZrhP6Y38M"}
+                url={"https://www.youtube.com/watch?v=pSZrhP6Y38M"}
                 width="100%"
                 height="100%"
                 controls
