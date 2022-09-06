@@ -12,7 +12,7 @@ const NancyForm = () => {
   return (
     <section className={classes.starting}>
       <div>
-        <img className={classes.img} src={imgCity} alt='citysensAI'/>
+        <img className={classes.img} src={imgCity} alt="citysensAI" />
       </div>
       <section className={classes.nancy}>
         <Carousel cols={1} rows={1} gap={10} loop scrollSnap>
@@ -20,13 +20,29 @@ const NancyForm = () => {
             <div>
               <ul className={classes.ul}>
                 <li>
-                  <img className={classes.img2} src={imgTecno} alt='tecnoSoftware' />
+                  {window.innerWidth < 780 ? (
+                    <img
+                      className={classes.imgTecno}
+                      src={imgTecno}
+                      alt="tecnoSoftware"
+                    />
+                  ) : (
+                    <img
+                      className={classes.imgTecno2}
+                      src={imgTecno}
+                      alt="tecnoSoftware"
+                    />
+                  )}
                 </li>
                 <li>
                   {window.innerWidth < 780 ? (
-                    <img className={classes.img3} src={imgNec} alt='NEC' />
+                    <img className={classes.img3} src={imgNec} alt="NEC" />
                   ) : (
-                    <img className={classes.img3v2} src={imgNec} alt='NEC chiquito' />
+                    <img
+                      className={classes.img3v2}
+                      src={imgNec}
+                      alt="NEC chiquito"
+                    />
                   )}
                 </li>
               </ul>
@@ -34,7 +50,7 @@ const NancyForm = () => {
           </Carousel.Item>
           <Carousel.Item>
             <ul className={classes.ul}>
-              <li>
+              <li className={classes.li}>
                 <h2>Equipo</h2>
               </li>
               <li className="nav-item">
@@ -48,20 +64,23 @@ const NancyForm = () => {
             </ul>
           </Carousel.Item>
           <Carousel.Item>
-            <ul className={classes.ul}>
+            <ul className={classes.ul2}>
               <li>
                 <h2>Tecnología</h2>
               </li>
-              <li className="nav-item">
-                <p>Metodología: Scrum</p>
-                <p>FrontEnd: AngularJS - Angular 11 - webForm</p>
-                <p>TFS: ?</p>
+              <p>Metodología: Scrum</p>
+              <p>FrontEnd: AngularJS - Angular 11 - webForm</p>
+              <p>TFS: ?</p>
+            </ul>
+          </Carousel.Item>
+          <Carousel.Item>
+            <ul className={classes.ul2}>
+              <li>
+                <h2>Tecnología</h2>
               </li>
-              <li className="nav-item">
-                <p>Backend: .NET</p>
-                <p>BD: SQL</p>
-                <p>ORM: Entity Framework</p>
-              </li>
+              <p>Backend: .NET</p>
+              <p>BD: SQL</p>
+              <p>ORM: Entity Framework</p>
             </ul>
           </Carousel.Item>
         </Carousel>
