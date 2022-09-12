@@ -1,6 +1,6 @@
 import classes from "./NancyForm.module.css";
 import Carousel from "better-react-carousel";
-import imgDeveloper from "../../assets/developer-icon.png";
+// import imgDeveloper from "../../assets/developer-icon.png";
 import imgProduct from "../../assets/product-icon.png";
 import imgQA from "../../assets/qa-icon.png";
 import imgDevops from "../../assets/devops-icon.png";
@@ -9,6 +9,7 @@ import imgNec from "../../assets/NEC_logo.png";
 import imgCity from "../../assets/citySensAI-logo.png";
 import gif from "../../assets/loader.gif";
 import gif2 from "../../assets/loader-2.gif";
+import imgDeveloper from "../../assets/developer.png";
 import ReactPlayer from "react-player";
 
 const NancyForm = () => {
@@ -58,7 +59,12 @@ const NancyForm = () => {
                   <h2>Equipo</h2>
                 </li>
                 <li className="nav-item">
-                  <img className={classes.img} src={imgDeveloper} alt="dev" />
+                  <div class="container">
+                    <div class="box">
+                     <img src={imgDeveloper} alt="dev" ></img> 
+                    </div>
+                  </div>
+                  {/* <img className={classes.img} src={imgDeveloper} alt="dev" /> */}
                   <img className={classes.img} src={imgProduct} alt="prod" />
                 </li>
                 <li className="nav-item">
@@ -72,6 +78,14 @@ const NancyForm = () => {
                   <h2>Equipo</h2>
                 </li>
                 <li className="nav-item">
+                <div className={classes.container}>
+                    <div className={classes.box}>
+                     <img className={classes.img} src={imgDeveloper} alt="dev" ></img>
+                     </div>
+                     <div className={classes.box}> 
+                     <img className={classes.img} src={imgProduct} alt="prod" ></img> 
+                    </div>
+                  </div>
                   <img className={classes.img} src={imgDeveloper} alt="dev" />
                   <img className={classes.img} src={imgProduct} alt="prod" />
                 </li>
