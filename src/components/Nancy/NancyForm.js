@@ -1,12 +1,12 @@
 import classes from "./NancyForm.module.css";
 import Carousel from "better-react-carousel";
 // import imgDeveloper from "../../assets/developer-icon.png";
-import imgProduct from "../../assets/product-icon.png";
-import imgQA from "../../assets/qa-icon.png";
-import imgDevops from "../../assets/devops-icon.png";
-import imgTecno from "../../assets/logo-blanco.png";
+import imgProduct from "../../assets/product.png";
+import imgQA from "../../assets/qa.jpg";
+import imgDevops from "../../assets/devops.jpg";
+import imgTecnoNec from "../../assets/TecnosoftwareNec.gif";
 import imgNec from "../../assets/NEC_logo.png";
-import imgCity from "../../assets/citySensAI-logo.png";
+import imgCity from "../../assets/citySensAI-Inicio.gif";
 import gif from "../../assets/loader.gif";
 import gif2 from "../../assets/loader-2.gif";
 import imgDeveloper from "../../assets/developer.png";
@@ -15,9 +15,11 @@ import ReactPlayer from "react-player";
 const NancyForm = () => {
   return (
     <section className={classes.starting}>
+      {/* INICIO */}
       <div>
-        <img className={classes.img} src={imgCity} alt="citysensAI" />
+        <img className={classes.imgInicio} src={imgCity} alt="citysensAI" />
       </div>
+      {/* CARRUSEL */}
       <section className={classes.nancy}>
         <Carousel cols={1} rows={1} gap={10} loop scrollSnap>
           <Carousel.Item>
@@ -27,28 +29,18 @@ const NancyForm = () => {
                   {window.innerWidth < 768 ? (
                     <img
                       className={classes.imgTecno}
-                      src={imgTecno}
+                      src={imgTecnoNec}
                       alt="tecnoSoftware"
                     />
                   ) : (
                     <img
                       className={classes.imgTecno2}
-                      src={imgTecno}
+                      src={imgTecnoNec}
                       alt="tecnoSoftware"
                     />
                   )}
                 </li>
-                <li>
-                  {window.innerWidth < 768 ? (
-                    <img className={classes.img3} src={imgNec} alt="NEC" />
-                  ) : (
-                    <img
-                      className={classes.img3v2}
-                      src={imgNec}
-                      alt="NEC chiquito"
-                    />
-                  )}
-                </li>
+                
               </ul>
             </div>
           </Carousel.Item>
