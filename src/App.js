@@ -31,7 +31,7 @@ function App() {
         </Route>
         <Route path="/Augu">
           {authCtx.isLoggedIn &&
-          (email === "augu@test.com" || email === "test@test.com") ? (
+            (email === "augu@test.com" || email === "test@test.com") ? (
             <Augu />
           ) : (
             <Redirect to="/" />
@@ -40,7 +40,7 @@ function App() {
         </Route>
         <Route path="/Ema">
           {authCtx.isLoggedIn &&
-          (email === "ema@test.com" || email === "test@test.com") ? (
+            (email === "ema@test.com" || email === "test@test.com") ? (
             <Ema />
           ) : (
             <Redirect to="/" />
@@ -49,7 +49,7 @@ function App() {
         </Route>
         <Route path="/Marga">
           {authCtx.isLoggedIn &&
-          (email === "marga@test.com" || email === "test@test.com") ? (
+            (email === "marga@test.com" || email === "test@test.com") ? (
             <Marga />
           ) : (
             <Redirect to="/" />
@@ -58,7 +58,7 @@ function App() {
         </Route>
         <Route path="/Nancy">
           {authCtx.isLoggedIn &&
-          (email === "nancy@test.com" || email === "test@test.com") ? (
+            (email === "nancy@test.com" || email === "test@test.com") ? (
             <Nancy />
           ) : (
             <Redirect to="/" />

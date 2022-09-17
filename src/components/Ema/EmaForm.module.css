@@ -6,3 +6,287 @@
 .starting h1 {
   font-size: 5rem;
 }
+
+.starting h1 {
+  font-size: 4rem;
+  margin-top: 0;
+  color: white;
+}
+
+.ema {
+  text-align: center;
+  max-width: 70rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 0rem;
+  padding: 1rem;
+  position: relative;
+  background-color: #1765a2;
+  color: white;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+}
+
+.augu h2 {
+  font-size: 2rem;
+  font-stretch: extra-condensed;
+  font-family: fantasy;
+  margin-top: 0;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #8aa0bd;
+  border-radius: 10px;
+}
+.img2 {
+  width: 100%;
+  height: 50%;
+  display: block;
+  margin-top: 90px;
+  border: 2px solid #8aa0bd;
+  border-radius: 10px;
+}
+.img2bis {
+  width: 100%;
+  height: 50%;
+  display: block;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  border: 2px solid #8aa0bd;
+  border-radius: 10px;
+}
+.img3 {
+  width: 100%;
+  height: 70%;
+  display: block;
+  margin-top: 55px;
+  border: 2px solid #8aa0bd;
+  background-color: #384044;
+  border-radius: 10px;
+}
+.img3bis {
+  width: 100%;
+  height: 70%;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  border: 2px solid #8aa0bd;
+  background-color: #384044;
+  border-radius: 10px;
+}
+
+.button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #8a2b06;
+  border: 1px solid #8a2b06;
+  color: white;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:active {
+  background-color: #641e03;
+  border-color: #641e03;
+}
+
+/* grid container */
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 200px 200px 200px;
+}
+
+.gridContainer .gridItems{  
+  text-align: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridContainer .gridItems .imageLogo{
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  border-radius: 15%;
+}
+
+.gridContainer .gridItems .tarjetaWrap{
+	margin: 0px;
+	-webkit-perspective: 800;
+	perspective: 800;
+}
+
+.gridContainer .gridItems .tarjeta{
+	width: 300px;
+	height: 190px;
+	background: #F29720;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+
+.gridContainer .gridItems .adelante, .atras{
+	width: 300px;
+	height: 190px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.gridContainer .gridItems .adelante{
+	width: 100%;
+}
+
+.gridContainer .gridItems .atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	font-family: "open sans";
+  background: #F29720;
+}
+
+.gridContainer .gridItems .tarjetaWrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.spanInt{
+  font-size: 10em;
+  color: #384044;
+}
+
+@media screen and (max-width: 768px) {
+  /* grid */
+  .gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 80px 80px;
+  }
+  
+  .gridContainer .gridItems{  
+    text-align: center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F29720;
+  }
+  
+  .gridContainer .gridItems .imageLogo{
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    border-radius: 15%;
+  }
+  
+  .gridContainer .gridItems .tarjetaWrap{
+    margin: 0px;
+    -webkit-perspective: 800;
+    perspective: 800;
+  }
+  
+  .gridContainer .gridItems .tarjeta{
+    width: 85px;
+    height: 60px;
+    background: #F29720;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: .7s ease;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+  }
+  
+  .gridContainer .gridItems .adelante, .atras{
+    width: 85px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .gridContainer .gridItems .adelante{
+    width: 100%;
+  }
+  
+  .gridContainer .gridItems .atras{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  
+    padding: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  
+    text-align: center;
+    color: #fff;
+    font-family: "open sans";
+    background: #F29720;
+  }
+  
+  .gridContainer .gridItems .tarjetaWrap:hover .tarjeta{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  
+  .spanInt{
+    font-size: 3em;
+    color: #384044;
+  }
+
+  /*fin grid*/
+
+  .img {
+    width: 100%;
+    height: 80%;
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    border: 2px solid #8aa0bd;
+    border-radius: 10px;
+  }
+}
