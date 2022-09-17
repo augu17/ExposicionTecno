@@ -1,6 +1,6 @@
 .box{
     position: relative;
-    width: 1300px;
+    width: 90%;
     height: 770px;
     display: flex;
     justify-content: center;
@@ -10,6 +10,7 @@
     border-radius: 20px;
     margin: 30px;
     box-sizing: 0 0 10px #000;
+    text-align: center;
 }
 
 .box::before{
@@ -53,5 +54,10 @@
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 768px){
+    .box{
+        height: 400px;
     }
 }

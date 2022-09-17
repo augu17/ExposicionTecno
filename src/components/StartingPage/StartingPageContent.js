@@ -11,8 +11,8 @@ const StartingPageContent = () => {
 
     <section className={classes.starting}>
 
-      <BorderAnimation />
-      {/* <TextAnimation /> */}
+      {/* <BorderAnimation /> */}
+      <TextAnimation />
     </section>
   );
 };
