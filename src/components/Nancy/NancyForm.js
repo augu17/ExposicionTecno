@@ -11,6 +11,7 @@ import gif from "../../assets/loader.gif";
 import gif2 from "../../assets/loader-2.gif";
 import imgDeveloper from "../../assets/developer.png";
 import ReactPlayer from "react-player";
+import { ImageAnimation } from "../../pages/Custom/image-animation/ImageAnimation";
 
 const NancyForm = () => {
   return (
@@ -40,7 +41,7 @@ const NancyForm = () => {
                     />
                   )}
                 </li>
-                
+
               </ul>
             </div>
           </Carousel.Item>
@@ -51,18 +52,14 @@ const NancyForm = () => {
                   <h2>Equipo</h2>
                 </li>
                 <li className="nav-item">
-                  <div class="container">
-                    <div class="box">
-                     <img src={imgDeveloper} alt="dev" ></img> 
-                    </div>
-                  </div>
+                  <ImageAnimation srcImg={imgDeveloper} />
                   {/* <img className={classes.img} src={imgDeveloper} alt="dev" /> */}
-                  <img className={classes.img} src={imgProduct} alt="prod" />
+                  {/* <img className={classes.img} src={imgProduct} alt="prod" /> */}
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <img className={classes.img} src={imgQA} alt="qa" />
                   <img className={classes.img} src={imgDevops} alt="devops" />
-                </li>
+                </li> */}
               </ul>
             ) : (
               <ul className={classes.ul2}>
@@ -70,20 +67,13 @@ const NancyForm = () => {
                   <h2>Equipo</h2>
                 </li>
                 <li className="nav-item">
-                <div className={classes.container}>
-                    <div className={classes.box}>
-                     <img className={classes.img} src={imgDeveloper} alt="dev" ></img>
-                     </div>
-                     <div className={classes.box}> 
-                     <img className={classes.img} src={imgProduct} alt="prod" ></img> 
-                    </div>
+                  <div className={classes.container}>
+                    <ImageAnimation srcImgDev={imgDeveloper} srcImgProd={imgProduct} />
                   </div>
-                  <img className={classes.img} src={imgDeveloper} alt="dev" />
-                  <img className={classes.img} src={imgProduct} alt="prod" />
+                  <ImageAnimation srcImgDev={imgDeveloper} srcImgProd={imgProduct} />
                 </li>
                 <li className="nav-item">
-                  <img className={classes.img} src={imgQA} alt="qa" />
-                  <img className={classes.img} src={imgDevops} alt="devops" />
+                  <ImageAnimation srcImgDev={imgQA} srcImgProd={imgDevops} />
                 </li>
               </ul>
             )}
