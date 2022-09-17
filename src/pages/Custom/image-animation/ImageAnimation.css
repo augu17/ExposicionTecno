@@ -1,0 +1,104 @@
+.container-image{
+    position: relative;
+    display: flex;
+    /* -webkit-box-reflect: below 1px linear-gradient
+    (transparent,transparent, transparent, #0004) ; */
+}
+
+.container-image .box-image{
+    position: relative;
+    width: 220px;
+    height: 200px;
+    /* background: #444; */
+    margin: 0 20px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #2da2ff 25%, #444 25%,
+    #444 50%, #2da2ff 50%, #2da2ff 75%, #444 75%, #444 100%);
+    background-size: 40px 40px;
+    filter: grayscale(1);
+    animation: animateBg 0.5s linear infinite;
+    animation-play-state: paused;
+    transition: filter 1s;
+    display:flex;
+    justify-content: center;
+}
+
+.container-image .box-image:nth-child(2){
+    background: linear-gradient(135deg, #ff61ae 25%, #444 25%,
+    #444 50%, #ff61ae 50%, #ff61ae 75%, #444 75%, #444 100%);
+    background-size: 18px 18px;
+}
+
+.container-image .box-image:hover{
+    animation-play-state: running;
+    filter: grayscale(0);
+}
+
+@keyframes animateBg {
+    0%{
+      background-position: 0;
+    }
+    100%{
+      background-position: 40px;
+    }
+}
+
+.image{
+    width: 70%;
+    /* height: 90%; */
+}
+
+.container-image .box-image .image {
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    transition: height 0.5s;
+}
+
+.container-image .box-image:hover .image {
+    height: 90%;
+}
+
+
+
+
+
+
+
+  /* .box-image span{
+    border: 1px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #0004) ;
+  }
+  .box-image span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  } */
+  /* termina */
+  /* card */
+  
+  
+  
+  
+  
+ 
+  /* .container-image .box-image img{
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    transition: height 0.5s;
+  }
+  .container-image .box-image:hover img{
+    height: 200px;
+  } */
